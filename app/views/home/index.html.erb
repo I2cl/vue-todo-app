@@ -1,0 +1,47 @@
+<section class="section" id="board">
+  <div class="container">
+    <div class="todo-form">
+      <input type="text" placeholder="タスクの内容を入力ください" v-model="newTaskName" />
+      <select v-model="newTaskAssignee">
+        <option value='' disabled selected>誰にお願いしますか？</option>
+        <option value="toru">toruさんにお願いする</option>
+        <option value="uma">umaさんにお願いする</option>
+        <option value="mika">mikaさんにお願いする</option>
+      </select>
+      <input type="number" v-model="newTaskMandays" placeholder="何日間でお願いしますか？"/>
+      <button @click="addTask">追加</button>
+      <hr>
+    </div>
+    <div class=columns>
+      <div class="column status-1">
+        <div class="tags has-addons">
+          <span class="tag">これからすること</span>
+          <span class="tag is-dark">{{ tasksOpen.length }}個あります</span>
+        </div>
+        <transition-group name="fade">
+          <task-card :task="task" v-for="task in tasksOpen" :key="task.name"></task-card>
+        </transition-group>
+      </div>
+      <div class="column status-2">
+        <div class="tags has-addons">
+          <span class="tag">今してること</span>
+          <span class="tag is-dark">{{ tasksDoing.length }}個あります</span>
+        </div>
+        <transition-group name="fade">
+          <task-card :task="task" v-for="task in tasksDoing" :key="task.name"></task-card>
+        </transition-group>
+      </div>
+      <div class="column status-3">
+        <div class="tags has-addons">
+          <span class="tag">もう終わったこと</span>
+          <span class="tag is-dark">{{ tasksClosed.length }}個あります</span>
+        </div>
+        <transition-group name="fade">
+          <task-card :task="task" v-for="task in tasksClosed" :key="task.name"></task-card>
+        </transition-group>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= javascript_pack_tag 'todos/index' %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  assignee: MyString
+  mandays: 1
+
+two:
+  status: MyString
+  assignee: MyString
+  mandays: 1

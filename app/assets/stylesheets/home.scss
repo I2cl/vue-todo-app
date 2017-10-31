@@ -1,0 +1,63 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html{background:url(http://thekitemap.com/images/feedback-img.jpg);
+  background-size: cover;
+  height:100%;
+}
+.todo-form{
+  text-align:center;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.todo-form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.todo-form input:first-child {height:100px;}
+.tag {
+  margin: 0 auto;
+}
+.status-1 {
+  background-color: #451726;
+}
+.status-2 {
+  background-color: #edf0d3;
+}
+.status-3 {
+  background-color: #e8cdba;
+}
+.card {
+  margin-bottom: 5px;
+}
+.card-content{
+  text-align:center;
+  height:150px;
+}
+.card-footer-item {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.7s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
