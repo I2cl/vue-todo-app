@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+この機能なら作れると思ったので作りました
+axiosとVueが入ってるので やーんあどあくしおす
 
-Things you may want to cover:
+* ↓モデルがこの機能↓
 
-* Ruby version
+* https://github.com/kzhodowmk/vue-todo-app/projects/1
 
-* System dependencies
+* ↓れいるずで作ったのがこちら↓
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* https://vuechan.herokuapp.com/
