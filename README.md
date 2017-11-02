@@ -10,3 +10,9 @@ axiosとVueが入ってるので やーんあどあくしおす
 * ↓れいるずで作ったのがこちら↓
 
 * https://vuechan.herokuapp.com/
+
+
+
+### CI
+
+[![Build Status](https://travis-ci.org/kzhodowmk/vue-todo-app.svg?branch=master)](https://travis-ci.org/kzhodowmk/vue-todo-app)

@@ -73,7 +73,7 @@ new Vue({
       return filters.closed(this.tasks)
     },
     getTodos: function(){
-      var self = this; //axiosで別の関数に切り替わりthisが参照できなくなるので便宜上selfに実装
+      var self = this;
       axios.get("/api/todos/")
         .then(function(response) {
           self.tasks = response.data
