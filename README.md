@@ -16,3 +16,4 @@ axiosとVueが入ってるので やーんあどあくしおす
 ### CI
 
 [![Build Status](https://travis-ci.org/kzhodowmk/vue-todo-app.svg?branch=master)](https://travis-ci.org/kzhodowmk/vue-todo-app)
+[![codecov](https://codecov.io/gh/kzhodowmk/vue-todo-app/branch/master/graph/badge.svg)](https://codecov.io/gh/kzhodowmk/vue-todo-app)
